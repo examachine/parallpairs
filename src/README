@@ -1,0 +1,143 @@
+
+Below has been copied to TRAC:
+
+Recursive Local Pruning
+-----------------------
+
+k=0        D         ----> t     split mpi comm
+         /  \
+k=1     D1    D2      ----> t/2
+       / \     / \ 
+k=2   D11 D12 D21  D22  ----> t/4 = t/p
+
+1. split mpi comms until each comm has 2 procs. and divide t by 2 at each level
+2. at the bottom of recursion calculate local candidates t/p
+3. kth level of recursion for each mpi comm group yields:
+   the local scores that meet t/2^k threshold.
+   to obtain the scores in k-1th level, we have Dx and Dy sub-datasets
+   with their local t/2^k matches. The union of 
+   vector ID's of these matches give us the potential matches C with t/2^{k-1}
+   threshold according to Local Pruning Lemma. We accumulate local scores in 
+   C only. 
+ 
+   for processor with rank k in group: 
+      a[k]: local scores on processor  
+      s[k]: part of local scores in group candidates with 
+
+induction
+  basis: local scores a and local candidates c with threshold t/p
+  induction: we have sub-datasets D1 and D2 with threshold t/k 
+    and we want to construct the matches for D with threshold 2t/k.
+    accumulate  
+         
+consider the merging of D1 and D2, two procs only: D1 and D2 have calculated
+local scores with t/2, now we take the union of matches in D1 and D2, and then
+we partition the vector ids across two processors. each proc takes one half of
+all vec ids. then, we make the exchange such that each processor sends its scores to the home processor of those vec ids in a single aapc operation, it's that
+simple.
+
+compared to local pruning, recursive local pruning produces a smaller set C of
+candidates C' <= C. After the candidates are calculate the actual score accumulation proceeds pretty much in the same fashion, however, a source of speedup is to make use of partial scores already calculated to be able to compute C'. therefore, a naive algorithm for recursive local pruning first calculates candidates in a hierarchical fashion, and then uses these candidates to accumulate scores. An optimized algorithm can interleave candidate generation and score accumulation steps, or use a score accumulation algorithm that can make use of the intermediate scores calculated in candidate generation step.
+
+Parallel Score Accumulation Algorithm
+-------------------------------------
+
+  Consider hypercube Hd
+
+  For instance let Hd=H2
+
+  Each doc is hashed into a home processor as dest = docid mod p
+
+   00 ------ 01
+    |                 |
+    |                 |
+    |                 |
+   10-------11
+
+First phase across dim 0:  00 -- 01, 10 -- 11
+
+Second phase across dim 1: 00 - 10, 01 -- 11
+
+Initially: each processor has a set of 
+  (docid,score) pairs with docid's chosen from the entire range of vectors 0..n-1
+
+In the first phase, each processor splits its set of candidates as follows:
+     a0: the candidates with ids that belong to pid's which have their first bit unset
+     a1: the  candidates with ids that belong to pid's which have their first bit set
+ 
+    Accordingly, a1 is sent to processors with pid's with first bit set and a0 to those unset. After this exchange, the candidates received from the partner is accumulated into the ones the processor already has. 
+
+   At the end of step one, in processors 00 and 10 there will be only candidates that
+correspond to home processors 00 and a01.
+
+   Likewise, at the ith step, each processor splits its set of candidates as follows:
+     a0: the candidates with ids that belong to pid's which have their ith bit unset
+     a1: the  candidates with ids that belong to pid's which have their ith bit set
+ a1 is sent to processors with pid's with ith bit set and a0 to those unset. 
+The candidates received from the partner are accumulated into the ones the processor already has by summing the (docid,score) pairs with identical docid's.  
+
+   At the end of ith step, in all processors with the pid's ith bit unset there will be 
+only candidates that belong to home processors with such pid's and likewise for those that are set. 
+
+  Theorem: When the algorithm finishes, this multi-fold operation ensures that
+each processor pid will have only those candidates belonging to itself, with scores
+properly accumulated.
+
+
+local pruning applied to a single processor
+===========================================
+
+let x be the current vector, let y be a candidate,
+x.y>=t iff for some i, x[i] . y[i] >= t / nonzeros(x)
+ proof. assume the contrary. then
+   for all i, x[i].y[i] < t / nonzeros(x)
+   U_(x[i]>0) x[i].y[i] < t
+   x.y < t 
+we can use a priority queue to filter all inverted lists 
+corresponding to terms in x, to detect those candidate vector y's such
+that x.y>=t, thus y[i] >= t / (nonzeros(x)*x[i]). this makes it possible to skip calculating inner product values for very distant vectors. 
+
+can this be used to calculate dot-products 
+in decreasing value of dot-product, similar to k-way merging? 
+each inverted list is a priority queue. search-next is implemented in O(1)
+? may be impossible i was probably too tired when i wrote this...
+
+or search for candidate vectors, in the order of the number of shared terms between x and y. first we start with i[term]'s on their own, this corresponds to length(x) items shared, each candidate vector with len(x) items must have a term with weight w such that x>=t/len(x), we take C as the set of y's accumulation of the i[term] inverted lists such that for all term in X, for all (y,w) in i[term] w>t/len(x). this asks for a dot-product with 6 products. now we intersect C with each i[term] individually, blah blah this will be too slow....
+
+
+dp = 0
+bestq <- make-pq()
+while true
+  for each x[term] in x
+    invpq <- pq[term] 
+    (y,w) <- max-pq(invpq)
+    a[y] <- a[y] + x[term]*w
+    insert-pq(bestq, x[term]*w, (t,y,w) )
+  (term, ymax,wmax) <- extract-max(bestq)
+  extract-max(pq[term])
+do
+
+pq of pq best elements that is, use it to keep track of pq's and get the next highest dot-product
+
+
+term0  term1  term2
+ |       |      |
+ |       |      |
+
+ x[0]    x[1]   x[2]
+
+a[y] = x[0] * i[0][y] + x[1] * i[1][y] + x[2] * i2[y] + ...
+
+max a[y]
+
+search
+maxw = [max i[0][y], max i[1][y], max ...]
+
+intersection of all, all the candidate vectors in C
+now walk constrained to C. how to do that? probably something like a skip list or search tree (interval tree?), to enable skipping over.
+
+now there will be those of length(x)-1, length(x)-2, and so forth, and
+those will be dealt with in separate iterations. we can start with the longest because it has the most relaxed filter, than the local pruning threshold increases, each individual product now has to be higher as the number of terms in a dot-product computaton decreases. we can use set difference operation to undo the intersection operation, while tightening the requirement and erasing candidates already computed in the previous iteration. notice the
+closure property.
+might be easier to implement if all inverted lists are already sorted. this
+can be accomplished with heapsort or quicksort in O(nlogn) time for n length inverted lists.
