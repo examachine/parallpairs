@@ -1,0 +1,62 @@
+sirius:textcat malfunct$ src/dv-stats data/CalGovernorRecall-09-30-2003-text.dv Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Read 30805 vectors
+number of vectors=30805
+number of dimensions=92274
+number of non-empty dimensions=92274
+number of nonzeroes=3004769
+eray@cypress:~/code/textcat$ src/dv-stats data/WikiPedia-2006-05-text.pages.rn.dv 
+Reading DV file data/WikiPedia-2006-05-text.pages.rn.dv
+Read 70115 vectors
+number of vectors=70115
+number of dimensions=1350761
+number of non-empty dimensions=1350761
+number of nonzeroes=43285850
+sirius:textcat malfunct$ src/dv-stats data/facebook.09.08.2008-text.pages.rn.dv Reading DV file data/facebook.09.08.2008-text.pages.rn.dv
+Read 66568 vectors
+number of vectors=66568
+number of dimensions=4618973
+number of non-empty dimensions=4618973
+number of nonzeroes=14277455
+eray@cypress:~/code/textcat$ src/dv-stats data/stanford-06-2005-text.pages.rn.dv 
+Reading DV file data/stanford-06-2005-text.pages.rn.dv
+Read 2208 vectors
+number of vectors=2208
+number of dimensions=24368
+number of non-empty dimensions=24368
+number of nonzeroes=312738
+eray@cypress:~/code/textcat$ src/dv-stats data/virginia-tech-coverage-4-23-2007-text.pages.rn.dv 
+Reading DV file data/virginia-tech-coverage-4-23-2007-text.pages.rn.dv
+Read 85653 vectors
+number of vectors=85653
+number of dimensions=367098
+number of non-empty dimensions=367098
+number of nonzeroes=25827347
+sirius:textcat malfunct$ src/dv-stats data/tw-10000K.patoh.dv 
+Reading DV file data/tw-10000K.patoh.dv
+Read 1011609 vectors
+number of vectors=1011609
+number of dimensions=1160904
+number of non-empty dimensions=1160904
+number of nonzeroes=9999999
+sirius:textcat malfunct$ src/dv-stats data/tw-1000K.patoh.dv 
+Reading DV file data/tw-1000K.patoh.dv
+Read 94239 vectors
+number of vectors=94239
+number of dimensions=87734
+number of non-empty dimensions=87734
+number of nonzeroes=999999
+sirius:textcat malfunct$ 
+eray@cypress:~/code/textcat$ src/dv-stats data/tw-10000K.patoh.hp.100.dv 
+Reading DV file data/tw-10000K.patoh.hp.100.dv
+Read 1011609 vectors
+number of vectors=1011609
+number of dimensions=1158946
+number of non-empty dimensions=17429
+number of nonzeroes=5223914
+eray@cypress:~/code/textcat$ src/dv-stats data/tw-10000K.patoh.lp.100.dv 
+Reading DV file data/tw-10000K.patoh.lp.100.dv
+Read 1011609 vectors
+number of vectors=1011609
+number of dimensions=1160904
+number of non-empty dimensions=1143474
+number of nonzeroes=4775977
