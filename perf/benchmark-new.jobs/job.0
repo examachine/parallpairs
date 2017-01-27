@@ -1,0 +1,9 @@
+#!/bin/sh
+#PBS -q ulakbim
+#PBS -l nodes=6:ppn=48
+#PBS -o perf/benchmark-new.jobs/job.0.out
+#PBS -e perf/benchmark-new.jobs/job.0.err
+#PBS -r y
+#PBS -V
+echo Running job 0
+mpirun -hostfile $PBS_NODEFILE -np 1 -x LD_LIBRARY_PATH /home_palamut2/eozkural/code/textcat/src/all-pairs -algo 1 -dv /home_palamut2/eozkural/code/textcat/data/facebook.09.08.2008-text.pages.rn.dv -threshold 0.9
