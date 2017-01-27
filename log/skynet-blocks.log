@@ -1,0 +1,1012 @@
+[exa@skynet textcat]$ perf/par-time.py --blocks --config=skynet perf/benchmark-small-blocks
+reading benchmark parameters from  perf/benchmark-small-blocks
+configuration skynet
+
+config:  skynet
+cleaning up processors
+running experiments for data/radikal.dv with 0.2 threshold
+running src/all-pairs -algo 1 -dv data/radikal.dv -threshold 0.2
+return value for "src/all-pairs -algo 1 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+
+* Running all-pairs-0-array
+doc 6800     
+Time elapsed: 20.543352
+Number of matches: 16810
+
+successful execution
+seen algo all-pairs-0-array
+running time of all-pairs-0-array is 20.5434
+number of matches is 16810
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 1 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 1 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6882    
+Time elapsed: 14.9614
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 14.9614
+number of matches is 16810
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 1 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 1 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6882    
+Time elapsed: 12.6123
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 12.6123
+number of matches is 16810
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 1 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 1 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6882    
+Time elapsed: 14.7474
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 14.7474
+number of matches is 16810
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 1 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 1 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6882    
+Time elapsed: 33.4935
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 33.4935
+number of matches is 16810
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 4 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 4 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6880    
+Time elapsed: 12.135
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 12.135
+number of matches is 16810
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 4 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 4 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6880    
+Time elapsed: 7.06934
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 7.06934
+number of matches is 16810
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 4 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 4 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6880    
+Time elapsed: 6.54827
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 6.54827
+number of matches is 16810
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 4 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 4 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6880    
+Time elapsed: 12.3448
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 12.3448
+number of matches is 16810
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 8 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 8 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6880    
+Time elapsed: 11.5775
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 11.5775
+number of matches is 16810
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 8 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 8 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6880    
+Time elapsed: 6.26905
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 6.26905
+number of matches is 16810
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 8 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 8 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6880    
+Time elapsed: 5.15424
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 5.15424
+number of matches is 16810
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 8 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 8 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6880    
+Time elapsed: 8.84975
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 8.84975
+number of matches is 16810
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 16 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 16 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6880    
+Time elapsed: 11.2991
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 11.2991
+number of matches is 16810
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 16 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 16 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6880    
+Time elapsed: 5.85488
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 5.85488
+number of matches is 16810
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 16 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 16 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6880    
+Time elapsed: 4.14914
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 4.14914
+number of matches is 16810
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 16 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 16 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6880    
+Time elapsed: 6.79069
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 6.79069
+number of matches is 16810
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 32 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 32 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6880    
+Time elapsed: 11.0861
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 11.0861
+number of matches is 16810
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 32 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 32 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6880    
+Time elapsed: 5.64265
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 5.64265
+number of matches is 16810
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 32 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 32 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6880    
+Time elapsed: 4.34995
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 4.34995
+number of matches is 16810
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 32 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 32 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6880    
+Time elapsed: 22.7959
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 22.7959
+number of matches is 16810
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 64 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 64 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6848    
+Time elapsed: 10.9643
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 10.9643
+number of matches is 16810
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 64 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 64 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6848    
+Time elapsed: 5.49913
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 5.49913
+number of matches is 16810
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 64 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 64 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6848    
+Time elapsed: 4.68507
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 4.68507
+number of matches is 16810
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 64 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 64 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 6848    
+Time elapsed: 35.0233
+Number of matches: 16810
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 35.0233
+number of matches is 16810
+running mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 11.462
+Number of matches: 16810
+
+successful execution
+seen algo all-pairs-2d
+running time of all-pairs-2d is 11.462
+number of matches is 16810
+running mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 8.43873
+Number of matches: 16810
+
+successful execution
+seen algo all-pairs-2d
+running time of all-pairs-2d is 8.43873
+number of matches is 16810
+running mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 5.76415
+Number of matches: 16810
+
+successful execution
+seen algo all-pairs-2d
+running time of all-pairs-2d is 5.76415
+number of matches is 16810
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 7.4578
+Number of matches: 16810
+
+successful execution
+seen algo all-pairs-2d
+running time of all-pairs-2d is 7.4578
+number of matches is 16810
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 5.2536
+Number of matches: 16810
+
+successful execution
+seen algo all-pairs-2d
+running time of all-pairs-2d is 5.2536
+number of matches is 16810
+running experiments for data/20_newsgroups.dv with 0.4 threshold
+running src/all-pairs -algo 1 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "src/all-pairs -algo 1 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+
+* Running all-pairs-0-array
+doc 20000     
+Time elapsed: 457.856424
+Number of matches: 64394
+
+successful execution
+seen algo all-pairs-0-array
+running time of all-pairs-0-array is 457.856
+number of matches is 64394
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 1 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 1 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 249.044
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 249.044
+number of matches is 64394
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 1 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 1 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 145.309
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 145.309
+number of matches is 64394
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 1 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 1 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 110.252
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 110.252
+number of matches is 64394
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 1 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 1 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 185.844
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 185.844
+number of matches is 64394
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 4 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 4 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 235.836
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 235.836
+number of matches is 64394
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 4 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 4 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 126.031
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 126.031
+number of matches is 64394
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 4 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 4 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 81.1054
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 81.1054
+number of matches is 64394
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 4 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 4 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 124.803
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 124.803
+number of matches is 64394
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 8 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 8 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 232.868
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 232.868
+number of matches is 64394
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 8 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 8 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 122.098
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 122.098
+number of matches is 64394
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 8 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 8 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 75.6211
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 75.6211
+number of matches is 64394
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 8 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 8 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 198.921
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 198.921
+number of matches is 64394
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 16 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 16 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 230.535
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 230.535
+number of matches is 64394
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 16 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 16 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 119.452
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 119.452
+number of matches is 64394
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 16 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 16 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 84.6839
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 84.6839
+number of matches is 64394
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 16 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 16 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 187.598
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 187.598
+number of matches is 64394
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 32 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 32 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 229.327
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 229.327
+number of matches is 64394
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 32 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 32 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 117.227
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 117.227
+number of matches is 64394
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 32 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 32 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 101.512
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 101.512
+number of matches is 64394
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 32 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 32 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 20000    
+Time elapsed: 211.517
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 211.517
+number of matches is 64394
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 64 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 4 -blocksize 64 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 19968    
+Time elapsed: 228.268
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 228.268
+number of matches is 64394
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 64 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 4 -blocksize 64 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 19968    
+Time elapsed: 115.29
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 115.29
+number of matches is 64394
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 64 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 4 -blocksize 64 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 19968    
+Time elapsed: 103.451
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 103.451
+number of matches is 64394
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 64 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 4 -blocksize 64 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+#docs: 19968    
+Time elapsed: 232.286
+Number of matches: 64394
+
+successful execution
+seen algo par-all-pairs-0-array-vert-opt
+running time of par-all-pairs-0-array-vert-opt is 232.286
+number of matches is 64394
+running mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 189.91
+Number of matches: 64394
+
+successful execution
+seen algo all-pairs-2d
+running time of all-pairs-2d is 189.91
+number of matches is 64394
+running mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 112.08
+Number of matches: 64394
+
+successful execution
+seen algo all-pairs-2d
+running time of all-pairs-2d is 112.08
+number of matches is 64394
+running mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 58.101
+Number of matches: 64394
+
+successful execution
+seen algo all-pairs-2d
+running time of all-pairs-2d is 58.101
+number of matches is 64394
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 52.7864
+Number of matches: 64394
+
+successful execution
+seen algo all-pairs-2d
+running time of all-pairs-2d is 52.7864
+number of matches is 64394
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 39.6188
+Number of matches: 64394
+
+successful execution
+seen algo all-pairs-2d
+running time of all-pairs-2d is 39.6188
+number of matches is 64394

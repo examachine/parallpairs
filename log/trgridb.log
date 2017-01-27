@@ -1,0 +1,23 @@
+-bash-3.2$ qperf lufer108 rc_bi_bw rc_bw rc_lat uc_bi_bw uc_bw uc_lat ud_bi_bw ud_bw ud_lat 
+rc_bi_bw:
+    bw  =  989 MB/sec
+rc_bw:
+    bw  =  776 MB/sec
+rc_lat:
+    latency  =  32.7 us
+uc_bi_bw:
+    send_bw  =  1.93 GB/sec
+    recv_bw  =   932 MB/sec
+uc_bw:
+    send_bw  =  1.81 GB/sec
+    recv_bw  =   970 MB/sec
+uc_lat:
+    latency  =  45.1 us
+ud_bi_bw:
+    send_bw  =  662 MB/sec
+    recv_bw  =  642 MB/sec
+ud_bw:
+    send_bw  =  534 MB/sec
+    recv_bw  =  534 MB/sec
+ud_lat:
+    latency  =  44.7 us

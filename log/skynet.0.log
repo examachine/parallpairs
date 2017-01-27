@@ -1,0 +1,2464 @@
+[exa@skynet textcat]$ perf/par-time.py --config=skynet perf/benchmark
+reading benchmark parameters from  perf/benchmark
+configuration skynet
+
+config:  skynet
+cleaning up processors
+running experiments for data/radikal.dv with 0.2 threshold
+running src/all-pairs -algo 1 -dv data/radikal.dv -threshold 0.2
+return value for "src/all-pairs -algo 1 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+
+* Running all-pairs-0-dense
+Time elapsed: 24.021904
+Number of matches: 16810
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+..............
+Time elapsed: 10.9587
+Number of matches: 16810
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+..............
+Time elapsed: 6.18205
+Number of matches: 16810
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+..............
+Time elapsed: 5.12297
+Number of matches: 16810
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+..............
+Time elapsed: 9.03933
+Number of matches: 16810
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 32 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+..............
+Time elapsed: 16.8332
+Number of matches: 16810
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0        
+Time elapsed: 9.71434
+Number of matches: 16810
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0        
+Time elapsed: 5.0049
+Number of matches: 16810
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0        
+Time elapsed: 5.2143
+Number of matches: 16810
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0        
+Time elapsed: 9.37845
+Number of matches: 16810
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 32 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0        
+Time elapsed: 46.5494
+Number of matches: 16810
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 11.4181
+Number of matches: 16810
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 8.47427
+Number of matches: 16810
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 5.83581
+Number of matches: 16810
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 7.52856
+Number of matches: 16810
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 4.98294
+Number of matches: 16810
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 8 -r 4 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 8 -r 4 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 7.71214
+Number of matches: 16810
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 16 -r 2 -dv data/radikal.dv -threshold 0.2
+return value for "mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 16 -r 2 -dv data/radikal.dv -threshold 0.2" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 5.03188
+Number of matches: 16810
+
+successful execution
+running experiments for data/radikal.dv with 0.3 threshold
+running src/all-pairs -algo 1 -dv data/radikal.dv -threshold 0.3
+return value for "src/all-pairs -algo 1 -dv data/radikal.dv -threshold 0.3" is 0
+Reading DV file data/radikal.dv
+Normalizing
+
+* Running all-pairs-0-dense
+Time elapsed: 23.895714
+Number of matches: 6141
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.3
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.3" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+..............
+Time elapsed: 10.9324
+Number of matches: 6141
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.3
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.3" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+..............
+Time elapsed: 5.64575
+Number of matches: 6141
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.3
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.3" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+..............
+Time elapsed: 3.46806
+Number of matches: 6141
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.3
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.3" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+..............
+Time elapsed: 5.9709
+Number of matches: 6141
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.3
+return value for "mpirun-lam n1-32 -np 32 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.3" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+..............
+Time elapsed: 13.0658
+Number of matches: 6141
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.3
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.3" is 0
+Reading DV file data/radikal.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0        
+Time elapsed: 9.62607
+Number of matches: 6141
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.3
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.3" is 0
+Reading DV file data/radikal.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0        
+Time elapsed: 4.96979
+Number of matches: 6141
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.3
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.3" is 0
+Reading DV file data/radikal.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0        
+Time elapsed: 5.02674
+Number of matches: 6141
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.3
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.3" is 0
+Reading DV file data/radikal.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0        
+Time elapsed: 10.0016
+Number of matches: 6141
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.3
+return value for "mpirun-lam n1-32 -np 32 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.3" is 0
+Reading DV file data/radikal.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0        
+Time elapsed: 44.2933
+Number of matches: 6141
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/radikal.dv -threshold 0.3
+return value for "mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/radikal.dv -threshold 0.3" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 11.4175
+Number of matches: 6141
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/radikal.dv -threshold 0.3
+return value for "mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/radikal.dv -threshold 0.3" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 8.39933
+Number of matches: 6141
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/radikal.dv -threshold 0.3
+return value for "mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/radikal.dv -threshold 0.3" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 5.81062
+Number of matches: 6141
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/radikal.dv -threshold 0.3
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/radikal.dv -threshold 0.3" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 6.84667
+Number of matches: 6141
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/radikal.dv -threshold 0.3
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/radikal.dv -threshold 0.3" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 5.27495
+Number of matches: 6141
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 8 -r 4 -dv data/radikal.dv -threshold 0.3
+return value for "mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 8 -r 4 -dv data/radikal.dv -threshold 0.3" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 7.01006
+Number of matches: 6141
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 16 -r 2 -dv data/radikal.dv -threshold 0.3
+return value for "mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 16 -r 2 -dv data/radikal.dv -threshold 0.3" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 5.30161
+Number of matches: 6141
+
+successful execution
+running experiments for data/radikal.dv with 0.4 threshold
+running src/all-pairs -algo 1 -dv data/radikal.dv -threshold 0.4
+return value for "src/all-pairs -algo 1 -dv data/radikal.dv -threshold 0.4" is 0
+Reading DV file data/radikal.dv
+Normalizing
+
+* Running all-pairs-0-dense
+Time elapsed: 24.008780
+Number of matches: 2100
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.4" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+..............
+Time elapsed: 10.8912
+Number of matches: 2100
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.4" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+..............
+Time elapsed: 5.62993
+Number of matches: 2100
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.4" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+..............
+Time elapsed: 3.55526
+Number of matches: 2100
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.4" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+..............
+Time elapsed: 6.84044
+Number of matches: 2100
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 32 src/par-all-pairs-vert -algo 2 -dv data/radikal.dv -threshold 0.4" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+..............
+Time elapsed: 10.221
+Number of matches: 2100
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.4" is 0
+Reading DV file data/radikal.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0        
+Time elapsed: 9.62452
+Number of matches: 2100
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.4" is 0
+Reading DV file data/radikal.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0        
+Time elapsed: 5.19315
+Number of matches: 2100
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.4" is 0
+Reading DV file data/radikal.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0        
+Time elapsed: 4.12936
+Number of matches: 2100
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.4" is 0
+Reading DV file data/radikal.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0        
+Time elapsed: 9.53145
+Number of matches: 2100
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 32 src/par-all-pairs-horiz -algo 1 -dv data/radikal.dv -threshold 0.4" is 0
+Reading DV file data/radikal.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0        
+Time elapsed: 44.1279
+Number of matches: 2100
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/radikal.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/radikal.dv -threshold 0.4" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 11.3872
+Number of matches: 2100
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/radikal.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/radikal.dv -threshold 0.4" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 8.31354
+Number of matches: 2100
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/radikal.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/radikal.dv -threshold 0.4" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 6.44519
+Number of matches: 2100
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/radikal.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/radikal.dv -threshold 0.4" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 7.47925
+Number of matches: 2100
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/radikal.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/radikal.dv -threshold 0.4" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 5.56213
+Number of matches: 2100
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 8 -r 4 -dv data/radikal.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 8 -r 4 -dv data/radikal.dv -threshold 0.4" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 6.9775
+Number of matches: 2100
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 16 -r 2 -dv data/radikal.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 16 -r 2 -dv data/radikal.dv -threshold 0.4" is 0
+Reading DV file data/radikal.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 6800     
+Time elapsed: 5.47235
+Number of matches: 2100
+
+successful execution
+running experiments for data/20_newsgroups.dv with 0.4 threshold
+running src/all-pairs -algo 1 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "src/all-pairs -algo 1 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+
+* Running all-pairs-0-dense
+Time elapsed: 470.437912
+Number of matches: 64394
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+........................................
+Time elapsed: 224.276
+Number of matches: 64394
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+........................................
+Time elapsed: 114.581
+Number of matches: 64394
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+........................................
+Time elapsed: 64.8212
+Number of matches: 64394
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+........................................
+Time elapsed: 144.221
+Number of matches: 64394
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.4
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+-----------------------------------------------------------------------------
+One of the processes started by mpirun has exited with a nonzero exit
+code.  This typically indicates that the process finished in error.
+If your process did not finish in error, be sure to include a "return
+0" or "exit(0)" in your C code before exiting the application.
+
+PID 32758 failed on node n17 (10.0.0.90) due to signal 9.
+-----------------------------------------------------------------------------
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+return value for "mpirun-lam n1-32 -np 32 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.4" is 9
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+..............................
+run failed with error 9, skipping
+cleaning up processors
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 172.63
+Number of matches: 64394
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 72.0546
+Number of matches: 64394
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 39.9328
+Number of matches: 64394
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 30.5167
+Number of matches: 64394
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 32 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 102.574
+Number of matches: 64394
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 188.872
+Number of matches: 64394
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 110.029
+Number of matches: 64394
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 55.5011
+Number of matches: 64394
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 47.8727
+Number of matches: 64394
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 35.0236
+Number of matches: 64394
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 8 -r 4 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 8 -r 4 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 36.0849
+Number of matches: 64394
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 16 -r 2 -dv data/20_newsgroups.dv -threshold 0.4
+return value for "mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 16 -r 2 -dv data/20_newsgroups.dv -threshold 0.4" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 26.6816
+Number of matches: 64394
+
+successful execution
+running experiments for data/20_newsgroups.dv with 0.5 threshold
+running src/all-pairs -algo 1 -dv data/20_newsgroups.dv -threshold 0.5
+return value for "src/all-pairs -algo 1 -dv data/20_newsgroups.dv -threshold 0.5" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+
+* Running all-pairs-0-dense
+Time elapsed: 469.847875
+Number of matches: 24451
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.5
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.5" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+........................................
+Time elapsed: 223.979
+Number of matches: 24451
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.5
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.5" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+........................................
+Time elapsed: 113.319
+Number of matches: 24451
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.5
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.5" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+........................................
+Time elapsed: 61.4715
+Number of matches: 24451
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.5
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.5" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+........................................
+Time elapsed: 84.236
+Number of matches: 24451
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.5
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+-----------------------------------------------------------------------------
+One of the processes started by mpirun has exited with a nonzero exit
+code.  This typically indicates that the process finished in error.
+If your process did not finish in error, be sure to include a "return
+0" or "exit(0)" in your C code before exiting the application.
+
+PID 32762 failed on node n17 (10.0.0.90) due to signal 9.
+-----------------------------------------------------------------------------
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+return value for "mpirun-lam n1-32 -np 32 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.5" is 9
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+..................................
+run failed with error 9, skipping
+cleaning up processors
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.5
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.5" is 0
+Reading DV file data/20_newsgroups.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 172.769
+Number of matches: 24451
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.5
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.5" is 0
+Reading DV file data/20_newsgroups.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 72.7051
+Number of matches: 24451
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.5
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.5" is 0
+Reading DV file data/20_newsgroups.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 40.7141
+Number of matches: 24451
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.5
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.5" is 0
+Reading DV file data/20_newsgroups.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 29.7383
+Number of matches: 24451
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.5
+return value for "mpirun-lam n1-32 -np 32 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.5" is 0
+Reading DV file data/20_newsgroups.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 100.851
+Number of matches: 24451
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/20_newsgroups.dv -threshold 0.5
+return value for "mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/20_newsgroups.dv -threshold 0.5" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 188.699
+Number of matches: 24451
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/20_newsgroups.dv -threshold 0.5
+return value for "mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/20_newsgroups.dv -threshold 0.5" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 109.871
+Number of matches: 24451
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/20_newsgroups.dv -threshold 0.5
+return value for "mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/20_newsgroups.dv -threshold 0.5" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 55.1761
+Number of matches: 24451
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/20_newsgroups.dv -threshold 0.5
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/20_newsgroups.dv -threshold 0.5" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 46.8401
+Number of matches: 24451
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/20_newsgroups.dv -threshold 0.5
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/20_newsgroups.dv -threshold 0.5" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 35.0281
+Number of matches: 24451
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 8 -r 4 -dv data/20_newsgroups.dv -threshold 0.5
+return value for "mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 8 -r 4 -dv data/20_newsgroups.dv -threshold 0.5" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 33.6742
+Number of matches: 24451
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 16 -r 2 -dv data/20_newsgroups.dv -threshold 0.5
+return value for "mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 16 -r 2 -dv data/20_newsgroups.dv -threshold 0.5" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 27.5057
+Number of matches: 24451
+
+successful execution
+running experiments for data/20_newsgroups.dv with 0.6 threshold
+running src/all-pairs -algo 1 -dv data/20_newsgroups.dv -threshold 0.6
+return value for "src/all-pairs -algo 1 -dv data/20_newsgroups.dv -threshold 0.6" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+
+* Running all-pairs-0-dense
+Time elapsed: 469.244777
+Number of matches: 8953
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.6
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.6" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+........................................
+Time elapsed: 224.22
+Number of matches: 8953
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.6
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.6" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+........................................
+Time elapsed: 113.079
+Number of matches: 8953
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.6
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.6" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+........................................
+Time elapsed: 58.5738
+Number of matches: 8953
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.6
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.6" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+........................................
+Time elapsed: 51.149
+Number of matches: 8953
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.6
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+-----------------------------------------------------------------------------
+One of the processes started by mpirun has exited with a nonzero exit
+code.  This typically indicates that the process finished in error.
+If your process did not finish in error, be sure to include a "return
+0" or "exit(0)" in your C code before exiting the application.
+
+PID 32766 failed on node n17 (10.0.0.90) due to signal 9.
+-----------------------------------------------------------------------------
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+return value for "mpirun-lam n1-32 -np 32 src/par-all-pairs-vert -algo 2 -dv data/20_newsgroups.dv -threshold 0.6" is 9
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+....................................
+run failed with error 9, skipping
+cleaning up processors
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.6
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.6" is 0
+Reading DV file data/20_newsgroups.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 172.689
+Number of matches: 8953
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.6
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.6" is 0
+Reading DV file data/20_newsgroups.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 72.4074
+Number of matches: 8953
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.6
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.6" is 0
+Reading DV file data/20_newsgroups.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 39.8327
+Number of matches: 8953
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.6
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.6" is 0
+Reading DV file data/20_newsgroups.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 30.5861
+Number of matches: 8953
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.6
+return value for "mpirun-lam n1-32 -np 32 src/par-all-pairs-horiz -algo 1 -dv data/20_newsgroups.dv -threshold 0.6" is 0
+Reading DV file data/20_newsgroups.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 103.239
+Number of matches: 8953
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/20_newsgroups.dv -threshold 0.6
+return value for "mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/20_newsgroups.dv -threshold 0.6" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 188.422
+Number of matches: 8953
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/20_newsgroups.dv -threshold 0.6
+return value for "mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/20_newsgroups.dv -threshold 0.6" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 110.465
+Number of matches: 8953
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/20_newsgroups.dv -threshold 0.6
+return value for "mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/20_newsgroups.dv -threshold 0.6" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 54.2689
+Number of matches: 8953
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/20_newsgroups.dv -threshold 0.6
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/20_newsgroups.dv -threshold 0.6" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 45.8504
+Number of matches: 8953
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/20_newsgroups.dv -threshold 0.6
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/20_newsgroups.dv -threshold 0.6" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 35.914
+Number of matches: 8953
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 8 -r 4 -dv data/20_newsgroups.dv -threshold 0.6
+return value for "mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 8 -r 4 -dv data/20_newsgroups.dv -threshold 0.6" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 34.9627
+Number of matches: 8953
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 16 -r 2 -dv data/20_newsgroups.dv -threshold 0.6
+return value for "mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 16 -r 2 -dv data/20_newsgroups.dv -threshold 0.6" is 0
+Reading DV file data/20_newsgroups.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 20000     
+Time elapsed: 26.1876
+Number of matches: 8953
+
+successful execution
+running experiments for data/CalGovernorRecall-09-30-2003-text.dv with 0.9 threshold
+running src/all-pairs -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9
+return value for "src/all-pairs -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+
+* Running all-pairs-0-dense
+Time elapsed: 410.549411
+Number of matches: 418906
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+.............................................................
+Time elapsed: 205.926
+Number of matches: 418906
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+.............................................................
+Time elapsed: 216.307
+Number of matches: 418906
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+-----------------------------------------------------------------------------
+One of the processes started by mpirun has exited with a nonzero exit
+code.  This typically indicates that the process finished in error.
+If your process did not finish in error, be sure to include a "return
+0" or "exit(0)" in your C code before exiting the application.
+
+PID 18448 failed on node n5 (10.0.0.71) due to signal 9.
+-----------------------------------------------------------------------------
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9" is 9
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+.............................................................
+run failed with error 9, skipping
+cleaning up processors
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+-----------------------------------------------------------------------------
+One of the processes started by mpirun has exited with a nonzero exit
+code.  This typically indicates that the process finished in error.
+If your process did not finish in error, be sure to include a "return
+0" or "exit(0)" in your C code before exiting the application.
+
+PID 16902 failed on node n13 (10.0.0.84) due to signal 9.
+-----------------------------------------------------------------------------
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9" is 9
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+...........................
+run failed with error 9, skipping
+cleaning up processors
+running mpirun-lam n1-32 -np 32 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Called from file "list.ml", line 69, characters 12-15
+Called from file "list.ml", line 69, characters 12-15
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+-----------------------------------------------------------------------------
+One of the processes started by mpirun has exited with a nonzero exit
+code.  This typically indicates that the process finished in error.
+If your process did not finish in error, be sure to include a "return
+0" or "exit(0)" in your C code before exiting the application.
+
+PID 302 failed on node n17 (10.0.0.90) due to signal 9.
+-----------------------------------------------------------------------------
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+return value for "mpirun-lam n1-32 -np 32 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9" is 9
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+........................
+run failed with error 9, skipping
+cleaning up processors
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 181.664
+Number of matches: 418906
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 87.4059
+Number of matches: 418906
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 56.3995
+Number of matches: 418906
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 84.2887
+Number of matches: 418906
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9
+return value for "mpirun-lam n1-32 -np 32 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 108.799
+Number of matches: 418906
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9
+return value for "mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 210.264
+Number of matches: 418906
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9
+return value for "mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 206.796
+Number of matches: 418906
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9
+return value for "mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 114.929
+Number of matches: 418906
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 270.499
+Number of matches: 418906
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 76.632
+Number of matches: 418906
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 8 -r 4 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9
+return value for "mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 8 -r 4 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 173.79
+Number of matches: 418906
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 16 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9
+return value for "mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 16 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 65.3564
+Number of matches: 418906
+
+successful execution
+running experiments for data/CalGovernorRecall-09-30-2003-text.dv with 0.95 threshold
+running src/all-pairs -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95
+return value for "src/all-pairs -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+
+* Running all-pairs-0-dense
+Time elapsed: 409.366221
+Number of matches: 177200
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+.............................................................
+Time elapsed: 202.167
+Number of matches: 177200
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+.............................................................
+Time elapsed: 216.311
+Number of matches: 177200
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+.............................................................
+Time elapsed: 274.654
+Number of matches: 177200
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+-----------------------------------------------------------------------------
+One of the processes started by mpirun has exited with a nonzero exit
+code.  This typically indicates that the process finished in error.
+If your process did not finish in error, be sure to include a "return
+0" or "exit(0)" in your C code before exiting the application.
+
+PID 16910 failed on node n13 (10.0.0.84) due to signal 9.
+-----------------------------------------------------------------------------
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95" is 9
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+...........................
+run failed with error 9, skipping
+cleaning up processors
+running mpirun-lam n1-32 -np 32 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+-----------------------------------------------------------------------------
+One of the processes started by mpirun has exited with a nonzero exit
+code.  This typically indicates that the process finished in error.
+If your process did not finish in error, be sure to include a "return
+0" or "exit(0)" in your C code before exiting the application.
+
+PID 306 failed on node n17 (10.0.0.90) due to signal 9.
+-----------------------------------------------------------------------------
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+return value for "mpirun-lam n1-32 -np 32 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95" is 9
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+........................
+run failed with error 9, skipping
+cleaning up processors
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 182.643
+Number of matches: 177200
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 87.4419
+Number of matches: 177200
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 55.3644
+Number of matches: 177200
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 84.5304
+Number of matches: 177200
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95
+return value for "mpirun-lam n1-32 -np 32 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 110.545
+Number of matches: 177200
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95
+return value for "mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 209.607
+Number of matches: 177200
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95
+return value for "mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 190.228
+Number of matches: 177200
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95
+return value for "mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 107.653
+Number of matches: 177200
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 309.327
+Number of matches: 177200
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 70.8536
+Number of matches: 177200
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 8 -r 4 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95
+return value for "mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 8 -r 4 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 145.938
+Number of matches: 177200
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 16 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95
+return value for "mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 16 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.95" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 59.2163
+Number of matches: 177200
+
+successful execution
+running experiments for data/CalGovernorRecall-09-30-2003-text.dv with 0.9999 threshold
+running src/all-pairs -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999
+return value for "src/all-pairs -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+
+* Running all-pairs-0-dense
+Time elapsed: 410.870282
+Number of matches: 154064
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+.............................................................
+Time elapsed: 198.233
+Number of matches: 154064
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+.............................................................
+Time elapsed: 195.871
+Number of matches: 154064
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+.............................................................
+Time elapsed: 277.422
+Number of matches: 154064
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+-----------------------------------------------------------------------------
+One of the processes started by mpirun has exited with a nonzero exit
+code.  This typically indicates that the process finished in error.
+If your process did not finish in error, be sure to include a "return
+0" or "exit(0)" in your C code before exiting the application.
+
+PID 22692 failed on node n15 (10.0.0.88) due to signal 9.
+-----------------------------------------------------------------------------
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999" is 9
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+............................
+run failed with error 9, skipping
+cleaning up processors
+running mpirun-lam n1-32 -np 32 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+-----------------------------------------------------------------------------
+One of the processes started by mpirun has exited with a nonzero exit
+code.  This typically indicates that the process finished in error.
+If your process did not finish in error, be sure to include a "return
+0" or "exit(0)" in your C code before exiting the application.
+
+PID 310 failed on node n17 (10.0.0.90) due to signal 9.
+-----------------------------------------------------------------------------
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+Fatal error: exception Mpi.Error("MPI_Error_string: process in local group is dead")
+Called from file "list.ml", line 69, characters 12-15
+return value for "mpirun-lam n1-32 -np 32 src/par-all-pairs-vert -algo 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999" is 9
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+Partitioning dims with: weight: allpairs0 sum_i C(freq_i,2)
+Partition dimensions according to all-pairs-0 load
+
+* Running par-all-pairs-0-array-vert-opt
+........................
+run failed with error 9, skipping
+cleaning up processors
+running mpirun-lam n1-32 -np 2 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999
+return value for "mpirun-lam n1-32 -np 2 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 182.155
+Number of matches: 154064
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999
+return value for "mpirun-lam n1-32 -np 4 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 87.2164
+Number of matches: 154064
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999
+return value for "mpirun-lam n1-32 -np 8 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 55.7611
+Number of matches: 154064
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999
+return value for "mpirun-lam n1-32 -np 16 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 84.7613
+Number of matches: 154064
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999
+return value for "mpirun-lam n1-32 -np 32 src/par-all-pairs-horiz -algo 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Read file, distributing vectors in cyclic fashion
+
+* Running par-all-pairs-0-array-horiz
+doc 0         
+Time elapsed: 109.983
+Number of matches: 154064
+
+successful execution
+running mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999
+return value for "mpirun-lam n1-32 -np 2 src/all-pairs-2d -algo 0 -q 2 -r 1 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 208.795
+Number of matches: 154064
+
+successful execution
+running mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999
+return value for "mpirun-lam n1-32 -np 4 src/all-pairs-2d -algo 0 -q 2 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 166.16
+Number of matches: 154064
+
+successful execution
+running mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999
+return value for "mpirun-lam n1-32 -np 8 src/all-pairs-2d -algo 0 -q 4 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 94.0591
+Number of matches: 154064
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 4 -r 4 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 289.153
+Number of matches: 154064
+
+successful execution
+running mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999
+return value for "mpirun-lam n1-32 -np 16 src/all-pairs-2d -algo 0 -q 8 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 65.8158
+Number of matches: 154064
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 8 -r 4 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999
+return value for "mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 8 -r 4 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 132.049
+Number of matches: 154064
+
+successful execution
+running mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 16 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999
+return value for "mpirun-lam n1-32 -np 32 src/all-pairs-2d -algo 0 -q 16 -r 2 -dv data/CalGovernorRecall-09-30-2003-text.dv -threshold 0.9999" is 0
+Reading DV file data/CalGovernorRecall-09-30-2003-text.dv
+Normalizing
+Converting to Fixed Point
+2D partitioning with: vectors: cyclic, dims: cyclic
+
+* Running all-pairs-2d
+doc 30800     
+Time elapsed: 54.6733
+Number of matches: 154064
+
+successful execution
+[exa@skynet textcat]$ 
