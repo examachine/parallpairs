@@ -1,6 +1,6 @@
 # parallpairs
 
-1-2 and 2-D parallel all-pairs similarity search algorithms in OCaml
+## 1-2 and 2-D parallel all-pairs similarity search algorithms in OCaml
 
 If you use this code, please cite the following paper. It is currently under review at IJPP.
 https://arxiv.org/abs/1402.3010
