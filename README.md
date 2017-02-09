@@ -16,5 +16,7 @@ All-pairs similarity problem asks to find all vector pairs in a set of vectors t
 
 The code is quite interesting, as it shows how to effectively use OCaml for MPI code. There is a bunch of well-written parallel functional code that I will extract from this codebase and release separately. You need the latest ocamlmpi release as that contains the patches I made to make this code work.
 
+You can download the datasets from: https://github.com/examachine/data/tree/master/dv
+
 
 Eray Ozkural, PhD
