@@ -1,15 +1,21 @@
-(*
+(* 
 **
 ** ocaml module Dynarray
 **
 ** Description: Array with dynamic size
-** Yes, this is the original Dynarray from 2002!
 **
-** Author: Eray Ozkural (exa) <examachine@gmail.com>, (C) 2002-2999
+** Author: Eray Ozkural <eray.ozkural@gmail.com>
 **
-** Copyright: See COPYING file that comes with this distribution
+** Copyright (C) 2011-2017 Gok Us Sibernetik Ar&Ge Ltd.
+**
+** This program is free software; you can redistribute it and/or modify it under** the terms of the Affero GNU General Public License as published by the Free
+** Software Foundation; either version 3 of the License, or (at your option)
+** any later version.
+**
+** Please read the COPYING file.
 **
 *)
+
 
 open Printf
 open Util

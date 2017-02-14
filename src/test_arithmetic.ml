@@ -1,6 +1,19 @@
+(* 
+**
+** Author: Eray Ozkural <eray.ozkural@gmail.com>
+**
+** Copyright (C) 2011-2017 Gok Us Sibernetik Ar&Ge Ltd.
+**
+** This program is free software; you can redistribute it and/or modify it under** the terms of the Affero GNU General Public License as published by the Free
+** Software Foundation; either version 3 of the License, or (at your option)
+** any later version.
+**
+** Please read the COPYING file.
+**
+*)
+
 open Util
 open Printf
-
 
 let main () =
   Random.self_init ();

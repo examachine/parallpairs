@@ -1,6 +1,20 @@
-(* Sparse Vector abstract data type and two implementations of it
-   using linked lists and dynamically sized arrays 
-   TODO: array implementation?? *)
+(* 
+**
+** Sparse Vector abstract data type and two implementations of it
+** using linked lists and dynamically sized arrays 
+** TODO: array implementation?
+**
+** Author: Eray Ozkural <eray.ozkural@gmail.com>
+**
+** Copyright (C) 2011-2017 Gok Us Sibernetik Ar&Ge Ltd.
+**
+** This program is free software; you can redistribute it and/or modify it under** the terms of the Affero GNU General Public License as published by the Free
+** Software Foundation; either version 3 of the License, or (at your option)
+** any later version.
+**
+** Please read the COPYING file.
+**
+*)
 
 module type SparseVectorSig =
 sig
