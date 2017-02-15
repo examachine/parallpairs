@@ -1,26 +1,22 @@
 NAME = textcat
 
 allpairsobj = util.cmo types.cmo parallel.cmo dv.cmo dynarray.cmo \
-dynarray1.cmo dynarrayPair.cmo sparseVector.cmo allPairs.cmo multilevel.cmo \
-score.cmo scoreAccum.cmo clustering.cmo powerSim.cmo 
+dynarray1.cmo dynarrayPair.cmo sparseVector.cmo allPairs.cmo  \
+score.cmo scoreAccum.cmo  
 parallpairsobj = parAllPairs.cmo parAllPairsHoriz.cmo allPairs2D.cmo 
-catobj = classFeatures.cmo distanceMatrix.cmo distance.cmo svmFeatures.cmo 
 allpairsxobj = util.cmx types.cmx parallel.cmx dv.cmx dynarray.cmx \
-dynarray1.cmx  dynarrayPair.cmx sparseVector.cmx allPairs.cmx multilevel.cmx \
-score.cmx scoreAccum.cmx clustering.cmx powerSim.cmx 
+dynarray1.cmx  dynarrayPair.cmx sparseVector.cmx allPairs.cmx \
+score.cmx scoreAccum.cmx  
 parallpairsxobj = parAllPairs.cmx parAllPairsHoriz.cmx allPairs2D.cmx 
-catxobj = classFeatures.cmx distanceMatrix.cmx distance.cmx svmFeatures.cmx 
 
 OBJECTS = util.cmo types.cmo parallel.cmo dv.cmo dynarray.cmo \
-dynarray1.cmo dynarrayPair.cmo sparseVector.cmo allPairs.cmo multilevel.cmo \
+dynarray1.cmo dynarrayPair.cmo sparseVector.cmo allPairs.cmo \
 score.cmo scoreAccum.cmo parAllPairsVert.cmo parAllPairsHoriz.cmo \
-allPairs2D.cmo clustering.cmo powerSim.cmo \
-classFeatures.cmo distanceMatrix.cmo distance.cmo svmFeatures.cmo 
+allPairs2D.cmo  
 XOBJECTS = util.cmx types.cmx parallel.cmx dv.cmx dynarray.cmx \
-dynarray1.cmx dynarrayPair.cmx sparseVector.cmx allPairs.cmx multilevel.cmx \
+dynarray1.cmx dynarrayPair.cmx sparseVector.cmx allPairs.cmx \
 score.cmx scoreAccum.cmx parAllPairsVert.cmx parAllPairsHoriz.cmx \
-allPairs2D.cmx clustering.cmx powerSim.cmx \
-classFeatures.cmx distanceMatrix.cmx  distance.cmx svmFeatures.cmx
+allPairs2D.cmx
 ARCHIVE  = $(NAME).cma
 XARCHIVE = $(NAME).cmxa
 
@@ -46,16 +42,12 @@ OCAMLOPT = ocamlfind ocamlopt $(OCAMLOPTFLAGS) -thread
 
 OCAMLDEP = ocamldep
 
-EXECS = all-pairs all-pairs-dbg class-features all-class-features-dbg \
-all-pairs-multilevel all-pairs-multilevel-dbg power-sim power-sim-dbg \
-k-means-1d k-means-1d-dbg \
-merge-features make-svm-data dv-to-svm process-documents split-train-test \
+EXECS = all-pairs all-pairs-dbg process-documents \
 par-all-pairs-vert par-all-pairs-vert-dbg par-all-pairs-horiz \
 par-all-pairs-horiz-dbg all-pairs-2d all-pairs-2d-dbg \
 dt-to-dv dv-filter-lp dv-filter dv-stats \
 test-util test-arithmetic test-types test-parallel test-parallel2 \
-test-score test-dynarray \
-test-1dclustering  test-1dclustering-dbg
+test-score test-dynarray
 #part-dv-vert  part-dv-2d
 
 .PHONY: all pkg optpkg
@@ -92,12 +84,6 @@ all-pairs: $(allpairsxobj) all-pairs.cmx
 all-pairs-dbg: $(allpairsobj) all-pairs.cmo
 	$(OCAMLL) $^ -o $@
 
-all-pairs-multilevel: $(allpairsxobj) all_pairs_multilevel.cmx
-	$(OCAMLOPTL) $^ -o $@
-
-all-pairs-multilevel-dbg: $(allpairsobj) all_pairs_multilevel.cmo
-	$(OCAMLL) $^ -o $@
-
 all-pairs-2d: $(XARCHIVE) all_pairs_2d.cmx
 	$(OCAMLOPTL) $^ -o $@
 
@@ -106,18 +92,6 @@ all-pairs-2d-dbg: $(ARCHIVE)
 
 part-dv-2d: $(XARCHIVE)  part_dv_2d.cmx
 	$(OCAMLOPTL) $^ -o $@
-
-power-sim: $(XARCHIVE) power_sim.cmx
-	$(OCAMLOPTL) $^ -o $@
-
-power-sim-dbg: $(ARCHIVE) power_sim.cmo
-	$(OCAMLL) $^ -o $@
-
-k-means-1d: $(XARCHIVE) k_means_1d.cmx
-	$(OCAMLOPTL) $^ -o $@
-
-k-means-1d-dbg: $(allpairsobj)
-	$(OCAMLL) $^ -o $@
 
 test-dynarray: $(ARCHIVE) test_dynarray.cmo
 	$(OCAMLL)  $^ -o $@
@@ -145,12 +119,6 @@ test-sparsevector: types.cmo util.cmo dynarray.cmo sparseVector.cmo \
 	$(OCAMLL) $^ -o $@
 
 test-util: util.cmo test_util.cmo
-	$(OCAMLL) $^ -o $@
-
-test-1dclustering: $(XARCHIVE) test_1dclustering.cmx
-	$(OCAMLOPTL) $^ -o $@
-
-test-1dclustering-dbg: $(ARCHIVE)  test_1dclustering.cmo
 	$(OCAMLL) $^ -o $@
 
 dt-to-dv: $(XARCHIVE) dt2dv.cmx
