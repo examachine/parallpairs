@@ -1,0 +1,54 @@
+INSTALLING PARALLPAIRS
+================
+
+Install dependencies first.
+
+The package uses the following ocaml packages: ocamlgraph unix str threads bigarray gz mpi
+
+Some of these may not be used in parallpairs which is a subset of a larger text processing package.
+
+Then, simply run:
+
+$ cd src
+$ make
+
+You can test the compilation with:
+
+$ src/all-pairs -help
+Usage: all-pairs -dv <dv-file> -threshold <sim-threshold> -algo <algorithm-number> [-list]
+  -dv document vector
+  -threshold similarity threshold
+  -sigma frequent term cutoff threshold
+  -th epsilon_h
+  -algo algorithm to run
+  -nonorm do not normalize
+  -list list algorithms
+  -help  Display this list of options
+  --help  Display this list of options
+Rigel:parallpairs malfunct$ src/all-pairs -list
+0: all-pairs-0
+1: all-pairs-0-array
+2: all-pairs-0-array2
+3: all-pairs-0-remscore
+4: all-pairs-0-minsize
+5: all-pairs-1
+6: all-pairs-1-dense
+7: all-pairs-1-remscore
+8: all-pairs-1-upperbound
+9: all-pairs-1-minsize
+10: all-pairs-1_remscore_minsize
+11: all-pairs-2
+12: all-pairs-bruteforce
+13: all-pairs-cutoff
+14: all-pairs-cutoff2
+
+$ src/all-pairs -dv ../data-github/dv/radikal.dv -threshold 0.9 -algo 1
+Reading DV file ../data-github/dv/radikal.dv
+Normalizing
+
+* Running all-pairs-0-array
+doc 6800     
+Time elapsed: 8.505927
+Number of matches: 10
+
+(The dataset is on github)
