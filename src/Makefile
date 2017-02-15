@@ -133,29 +133,6 @@ dv-filter-lp: $(XARCHIVE) dv_filter_lp.cmx
 dv-stats: $(XARCHIVE) dv_stats.cmx
 	$(OCAMLOPTL) $^ -o $@
 
-class-features-dbg: $(ARCHIVE) class-features.cmo
-	$(OCAMLL) $^ -o $@
-
-all-class-features: $(XARCHIVE) all-class-features.cmx
-	$(OCAMLOPTL) $^ -o $@
-
-all-class-features-dbg: $(ARCHIVE) all-class-features.cmo
-
-class-features: $(XARCHIVE) class-features.cmx
-	$(OCAMLOPTL) $^ -o $@
-
-make-svm-data: $(XARCHIVE) make-svm-data.cmx
-	$(OCAMLOPTL) $^ -o $@
-
-split-train-test: $(XARCHIVE) split-train-test.cmx
-	$(OCAMLOPTL) $^ -o $@
-
-merge-features: $(XARCHIVE) merge-features.cmx
-	$(OCAMLOPTL) $^ -o $@
-
-dv-to-svm: $(XARCHIVE) dv-to-svm.cmx
-	$(OCAMLOPTL) $^ -o $@
-
 process-documents: processDocuments.C
 	g++ -g $^ -o $@
 
